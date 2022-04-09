@@ -89,7 +89,8 @@ function checaVencedor(){
         mudaCorQuadrado(quadrado3, quadrado5, quadrado7);
         mudarVencedor(quadrado3);
     }
-}
+} 
+
 
 function mudarVencedor(quadrado) {
     vencedor = quadrado.innerHTML;
