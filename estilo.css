@@ -1,18 +1,18 @@
 body {
     text-align: center;
-    background-color: rgb(225, 255, 233);
+    background-color: rgb(5, 81, 100);
 }
 
 .quadrado {
     text-align: center;
     width: 50px;
-    background: rgb(255, 201, 235);
+    background: rgb(252, 250, 140);
     display: inline-block;
     padding: 40px;
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
-    color:rgb(255, 201, 235);
+    color:rgb(252, 250, 140);
 }
 
 .jogador, .vencedor {
@@ -25,4 +25,9 @@ button {
     height: 30px;
     background: rgb(154, 237, 155);
     cursor: pointer;
+}
+
+
+.tituloTxt{
+    color: rgb(243, 244, 221);
 }
