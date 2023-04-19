@@ -1,4 +1,3 @@
-## Órbi Web Games Developer
+## Meu Primeiro Jogo da Velha com JS
 
-_______________________________________________________
 
