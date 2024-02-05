@@ -1,3 +1,3 @@
-## Meu Primeiro Jogo da Velha com JS
+## Meu Primeiro Jogo da Velha 
 
-
+### Utilizei JavaScript, html e css
