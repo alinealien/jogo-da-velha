@@ -12,7 +12,7 @@ body {
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
-    color:rgb(4, 191, 191, 75);
+    color: rgba(3, 114, 166, 65);
 }
 
 .jogador, .vencedor {
