@@ -6,13 +6,13 @@ body {
 .quadrado {
     text-align: center;
     width: 50px;
-    background: rgb(252, 250, 140);
+    background: rgba(3, 114, 166, 65);
     display: inline-block;
     padding: 40px;
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
-    color:rgb(252, 250, 140);
+    color: rgba(3, 114, 166, 65);
 }
 
 .jogador, .vencedor {
@@ -29,9 +29,9 @@ button {
 
 
 .tituloTxt{
-    color: rgb(243, 244, 221);
+    color: rgba(4, 30, 64, 25);
 }
 
 label{
-    color: rgb(243, 244, 221);
+    color: rgba(100, 228, 255, 100);
 }

@@ -1,3 +1,3 @@
-## Meu Primeiro Jogo da Velha com JS
+## Jogo da Velha Colaborativo
 
 
