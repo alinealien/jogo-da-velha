@@ -151,7 +151,7 @@ var jogador2 = {
     peca: ''
 };
 
-/*
+
 function solicitarNomeJogador(numeroJogador) {
     var nome = prompt("Por favor, insira o nome do Jogador " + numeroJogador);
     if (nome != null) {
@@ -169,7 +169,7 @@ function solicitarPecaJogador(numeroJogador) {
     document.querySelector(".jogador" + numeroJogador + " .peca-jogador").textContent = "Peça: " + peca.toUpperCase();
     return peca.toUpperCase();
 }
-*/
+
 function exibirAlertaVencedor(nome) {
     alert("O vencedor é: " + nome);
 }
