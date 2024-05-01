@@ -12,17 +12,17 @@ O jogo da velha é um passatempo clássico que envolve dois jogadores, X e O, qu
 
 Se você deseja contribuir para este projeto, fique à vontade para realizar issues e pull requests. Aqui estão algumas maneiras pelas quais você pode ajudar:
 
-    Implementar novos recursos ou melhorias no jogo.
-    Corrigir bugs ou problemas existentes.
-    Aprimorar a interface do usuário com CSS.
-    Documentar o código ou adicionar comentários para facilitar a compreensão.
+    1. Implementar novos recursos ou melhorias no jogo.
+    2. Corrigir bugs ou problemas existentes.
+    3. Aprimorar a interface do usuário com CSS.
+    4. Documentar o código ou adicionar comentários para facilitar a compreensão.
 
 Como Começar
 
-    Faça um fork deste repositório.
-    Clone o fork para o seu ambiente local.
-    Implemente suas alterações ou adições.
-    Faça commit e push para o seu fork.
-    Envie um pull request para revisão.
+    1. Faça um fork deste repositório.
+    2. Clone o fork para o seu ambiente local.
+    3. Implemente suas alterações ou adições.
+    4. Faça commit e push para o seu fork.
+    5. Envie um pull request para revisão.
 
 
