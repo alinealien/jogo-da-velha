@@ -43,12 +43,10 @@ body {
 
 .container{
    display: inline-block;
-   padding: 10px;
-    
+   padding: 10px;   
 }
 
 .quadrado {
-    display: flex;
     justify-content: center;
     align-items: flex-start; 
     width: 100px;
@@ -91,7 +89,7 @@ body {
 
     margin-left: 65%;
     margin-right: auto;
-    width: 15%;
+    width: 20%;
 
     margin-top: -8%;
     
@@ -100,26 +98,27 @@ body {
 
 .jogador1, 
 .jogador2, 
-.vencedor, 
-button{
+.vencedor{
     color: white;
     font-size: 20px;
     display: flex;
-    justify-content: center;
-    margin-left: 50px;
 }
 
 
-button {
+button{
     background-color: transparent;
-    border: none;
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 5%;
     width: 100px;
     height: 30px;
     cursor: pointer;
     color: white;
+    border: 1px solid white;
 }
-  
+
+.button-class{
+    border-radius: 10%;
+}
 
 
 
