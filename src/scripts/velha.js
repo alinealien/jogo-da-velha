@@ -5,6 +5,7 @@ var vencedorSelecionado = document.getElementById('vencedor-selecionado');
 mudarJogador('X');
 
 function escolherQuadrado(id) {
+   
     if (vencedor !== null) {
         return;
     }
@@ -15,7 +16,7 @@ function escolherQuadrado(id) {
     }
 
     quadrado.innerHTML = jogador;
-    quadrado.style.color = '#000';
+    quadrado.style.color = 'rgba(176, 52, 117)';
 
     if (jogador === 'X') {
         jogador = 'O';
@@ -31,6 +32,7 @@ function mudarJogador(valor) {
     jogador = valor;
     jogadorSelecionado.innerHTML = jogador;
 }
+
 
 function checaVencedor(){
     var quadrado1 = document.getElementById(1);
@@ -89,6 +91,14 @@ function checaVencedor(){
         mudaCorQuadrado(quadrado3, quadrado5, quadrado7);
         mudarVencedor(quadrado3);
     }
+
+     
+    if (checaSequencia(quadrado1, quadrado2, quadrado3)) {
+        mudaCorQuadrado(quadrado1, quadrado2, quadrado3);
+        mudarVencedor(quadrado1);
+        exibirAlertaVencedor(quadrado1.innerHTML); // Chamada corrigida
+        return;
+    }
 } 
 
 
@@ -98,9 +108,12 @@ function mudarVencedor(quadrado) {
 }
 
 function mudaCorQuadrado(quadrado1, quadrado2, quadrado3) {
-    quadrado1.style.background = '#0f0';
-    quadrado2.style.background = '#0f0';
-    quadrado3.style.background = '#0f0';
+    quadrado1.style.background = 'rgba(52, 176, 117, 0.7)'; // cor de destaque para o fundo
+    quadrado1.style.color = 'rgba(9, 53, 115, 0.5)'; // cor de destaque para o texto
+    quadrado2.style.background = 'rgba(52, 176, 117, 0.7)';
+    quadrado2.style.color = 'rgba(9, 53, 115, 0.5)';
+    quadrado3.style.background = 'rgba(52, 176, 117, 0.7)';
+    quadrado3.style.color = 'rgba(9, 53, 115, 0.5)';
 }
 
 function checaSequencia(quadrado1, quadrado2, quadrado3) {
@@ -120,10 +133,58 @@ function reiniciar()
 
     for (var i = 1; i <= 9; i++) {
         var quadrado = document.getElementById(i);
-        quadrado.style.background = '#eee';
-        quadrado.style.color = '#eee';
+        quadrado.style.background = 'rgba(9, 53, 115, 0.5)';
+        quadrado.style.color = 'rgba(9, 53, 115, 0.0)';
         quadrado.innerHTML = '-';
     }
 
     mudarJogador('X');
+}
+
+var jogador1 = {
+    nome: '',
+    peca: ''
+};
+
+var jogador2 = {
+    nome: '',
+    peca: ''
+};
+
+/*
+function solicitarNomeJogador(numeroJogador) {
+    var nome = prompt("Por favor, insira o nome do Jogador " + numeroJogador);
+    if (nome != null) {
+        document.querySelector(".jogador" + numeroJogador + " p").textContent = nome;
+    }
+    
+    
+}
+
+function solicitarPecaJogador(numeroJogador) {
+    var peca = '';
+    while (peca.toUpperCase() !== 'X' && peca.toUpperCase() !== 'O') {
+        peca = prompt("Jogador " + numeroJogador + ", por favor escolha X ou O:");
+    }
+    document.querySelector(".jogador" + numeroJogador + " .peca-jogador").textContent = "Peça: " + peca.toUpperCase();
+    return peca.toUpperCase();
+}
+*/
+function exibirAlertaVencedor(nome) {
+    alert("O vencedor é: " + nome);
+}
+
+
+window.onload = function() {
+    solicitarNomeJogador(1);
+    solicitarNomeJogador(2);
+
+    var pecaJogador1 = solicitarPecaJogador(1);
+    var pecaJogador2 = pecaJogador1 === 'X' ? 'O' : 'X'; // O jogador 2 recebe a peça que não foi escolhida pelo jogador 1
+
+    // Definir a peça do Jogador 2
+    document.querySelector(".jogador2 .peca-jogador").textContent = "Peça: " + pecaJogador2;
+
+    console.log("Jogador 1 escolheu " + pecaJogador1);
+    console.log("Jogador 2 é " + pecaJogador2);
 }

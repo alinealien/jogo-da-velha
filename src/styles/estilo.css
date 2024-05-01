@@ -1,0 +1,154 @@
+body {
+    overflow: hidden;
+    font-family: Consolas,monaco,monospace; 
+    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgba(9, 53, 115, 0.5);
+}
+
+.icon-logo-img, img{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    display: inline-block;
+   
+}
+
+.container1-quadrado {
+    display: flex;
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 45px;
+    margin-top: 5%;
+}
+
+.container2-quadrado {
+    display: flex;
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 45px;
+}
+
+.container3-quadrado {
+    display: flex;
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 3%;
+}
+
+.container{
+   display: inline-block;
+   padding: 10px;
+    
+}
+
+.quadrado {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100px;
+    height: 100px;
+    background-color: rgba(9, 53, 115, 0.5);
+    display: inline-block;
+    padding: 70px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: rgba(9, 53, 115, 0.0);
+    flex-wrap: wrap;
+}
+
+.container-pai{
+    display: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7%;
+}
+
+.container-jogadores {
+    order: 1;
+    display: flex;
+    margin-top: -8%;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-right: 10%;
+}
+
+.container-info-jogadores{
+    order: 2;
+    display: inline-block;
+    
+    padding: 50px;
+    border: 1px solid white;
+    border-radius: 2%;
+    list-style-type: none;
+
+    margin-left: 65%;
+    margin-right: auto;
+    width: 15%;
+
+    margin-top: -8%;
+    
+}
+
+
+.jogador1, 
+.jogador2, 
+.vencedor, 
+button{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
+  
+
+
+
+.jogador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20%;
+    padding: 10px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 15%;
+}
+
+.jogador-icon {
+    width: 150px;
+    height: 150px;
+}
+
+p{
+    margin-top: 30px;
+}
+
+.tituloTxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 245);
+}
+
