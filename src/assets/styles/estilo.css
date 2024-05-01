@@ -12,7 +12,7 @@ body {
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
-    color: rgba(3, 114, 166, 65);
+    color: #c8a2c8;
 }
 
 .jogador, .vencedor {
@@ -23,7 +23,7 @@ button {
     margin-top: 10px;
     width: 100px;
     height: 30px;
-    background: rgb(154, 237, 155);
+    background: #FF69B4;
     cursor: pointer;
 }
 
