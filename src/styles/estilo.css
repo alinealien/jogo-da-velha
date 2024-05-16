@@ -1,14 +1,16 @@
 body {
     overflow: hidden;
     font-family: Consolas,monaco,monospace; 
-    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
+    background: linear-gradient(to right, #f0eaed 30%, #093573 95%); /* Adiciona um gradiente de cor */
 }
 
 .navbar{
     display: flex;
+    padding: 30px;
+    border-radius: 10px;
     justify-content: center;
     justify-items: center;
-    background-color: rgba(9, 53, 115, 0.5);
+    background-color: rgba(5, 5, 5, 0.5);
 }
 
 .icon-logo-img, img{
@@ -43,7 +45,7 @@ body {
 
 .container{
    display: inline-block;
-   padding: 10px;   
+   padding: 40px;   
 }
 
 .quadrado {
@@ -113,7 +115,7 @@ button{
     height: 30px;
     cursor: pointer;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .button-class{
@@ -148,6 +150,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(255, 255, 245);
+    color: rgb(209, 209, 209);
+    text-decoration: underline;
 }
 
