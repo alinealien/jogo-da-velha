@@ -51,7 +51,8 @@ body {
     align-items: flex-start; 
     width: 100px;
     height: 100px;
-    background-color: rgba(9, 53, 115, 0.5);
+/*     background-color: rgba(9, 53, 115, 0.5); */
+    background-color: black;
     display: inline-block;
     padding: 70px;
     font-size: 60px;
