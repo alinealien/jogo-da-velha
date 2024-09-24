@@ -52,9 +52,10 @@ body {
     width: 100px;
     height: 100px;
     background-color: rgba(9, 53, 115, 0.5);
-    display: inline-block;
+    display: flex;
+    align-content: center;
     padding: 70px;
-    font-size: 60px;
+    font-size: 100px;
     margin: 5px;
     cursor: pointer;
     color: rgba(9, 53, 115, 0.0);
