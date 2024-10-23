@@ -57,7 +57,7 @@ body {
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
-    color: rgba(9, 53, 115, 0.0);
+    color: #008000;
     flex-wrap: wrap;
 }
 
