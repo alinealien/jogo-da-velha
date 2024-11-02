@@ -1,153 +1,198 @@
+/* --- Estilos Gerais --- */
 body {
     overflow: hidden;
-    font-family: Consolas,monaco,monospace; 
-    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
-}
-
-.navbar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Melhor para legibilidade */
+    background: linear-gradient(135deg, #D1347B 30%, #093573 95%);
+    color: #FFF;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    background-color: rgba(9, 53, 115, 0.5);
+    flex-direction: column;
+    align-items: center;
 }
 
-.icon-logo-img, img{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    display: inline-block;
-   
-}
-
-.container1-quadrado {
+/* --- Navbar --- */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(9, 53, 115, 0.6);
     display: flex;
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 45px;
-    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.container2-quadrado {
-    display: flex;
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 45px;
+.icon-logo-img,
+img {
+    margin: 0 1%;
+    height: 40px;
+    object-fit: contain;
 }
 
+/* --- Containers de Quadrados --- */
+.container1-quadrado,
+.container2-quadrado,
 .container3-quadrado {
     display: flex;
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 3%;
-}
-
-.container{
-   display: inline-block;
-   padding: 10px;   
-}
-
-.quadrado {
-    justify-content: center;
-    align-items: flex-start; 
-    width: 100px;
-    height: 100px;
-    background-color: rgba(9, 53, 115, 0.5);
-    display: inline-block;
-    padding: 70px;
-    font-size: 60px;
-    margin: 5px;
-    cursor: pointer;
-    color: rgba(9, 53, 115, 0.0);
-    flex-wrap: wrap;
-}
-
-.container-pai{
-    display: flex-end;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -7%;
+    width: 120px;
+    height: 120px;
+    margin: 1.5rem;
+    background: rgba(9, 53, 115, 0.7);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.container-jogadores {
-    order: 1;
+.container1-quadrado:hover,
+.container2-quadrado:hover,
+.container3-quadrado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Quadrado com Efeito Responsivo --- */
+.quadrado {
     display: flex;
-    margin-top: -8%;
-    justify-content: flex-end; 
     align-items: center;
-    margin-right: 10%;
-}
-
-.container-info-jogadores{
-    order: 2;
-    display: inline-block;
-    
-    padding: 50px;
-    border: 1px solid white;
-    border-radius: 2%;
-    list-style-type: none;
-
-    margin-left: 65%;
-    margin-right: auto;
-    width: 20%;
-
-    margin-top: -8%;
-    
-}
-
-
-.jogador1, 
-.jogador2, 
-.vencedor{
-    color: white;
-    font-size: 20px;
-    display: flex;
-}
-
-
-button{
-    background-color: transparent;
-    font-size: 20px;
-    margin-top: 5%;
+    justify-content: center;
     width: 100px;
-    height: 30px;
+    height: 100px;
+    background: rgba(9, 53, 115, 0.5);
+    font-size: 60px;
+    margin: 5px;
     cursor: pointer;
-    color: white;
-    border: 1px solid white;
+    color: #FFF;
+    border-radius: 8px;
+    transition: background 0.3s ease;
 }
 
-.button-class{
-    border-radius: 10%;
+.quadrado:hover {
+    background: rgba(9, 53, 115, 0.8);
 }
 
+/* --- Layout Principal e Alinhamento --- */
+.container-pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 3%;
+}
 
+/* --- Estilos de Informações de Jogadores --- */
+.container-jogadores {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2% 10% 0 0;
+}
 
-.jogador{
+.container-info-jogadores {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(9, 53, 115, 0.4);
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.jogador1,
+.jogador2,
+.vencedor {
+    font-size: 1.2rem;
+    color: #FFF;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+/* --- Botões Estilizados --- */
+button {
+    background-color: transparent;
+    font-size: 1rem;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFF;
+    color: #093573;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-class {
+    border-radius: 10px;
+}
+
+/* --- Estilo dos Jogadores --- */
+.jogador {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: -20%;
-    padding: 10px;
-    margin-right: 80px;
-    margin-left: 80px;
-    margin-bottom: 15%;
+    margin: 0 80px 5%;
+    padding: 1rem;
 }
 
 .jogador-icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
 
-p{
-    margin-top: 30px;
+.jogador-icon:hover {
+    transform: scale(1.1);
 }
 
-.tituloTxt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+p {
+    margin-top: 1rem;
+}
+
+/* --- Título Centralizado --- */
+.tituloTxt {
+    font-size: 1.8rem;
+    font-weight: 600;
     text-align: center;
-    color: rgb(255, 255, 245);
+    color: #FFF;
+    margin: 1.5rem 0;
 }
 
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .container1-quadrado,
+    .container2-quadrado,
+    .container3-quadrado,
+    .quadrado {
+        width: 80px;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+
+    .container-info-jogadores {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    button {
+        width: 100px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .jogador {
+        margin: 0 40px 10%;
+    }
+
+    .tituloTxt {
+        font-size: 1.5rem;
+    }
+}
