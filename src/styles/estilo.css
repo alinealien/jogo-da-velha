@@ -150,4 +150,32 @@ p{
     text-align: center;
     color: rgb(255, 255, 245);
 }
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+    letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+  }
 
+  section input {
+    width: 17rem; /* Largura total dos inputs em telas pequenas */
+  }
+
+  section button {
+    padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+    font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+  }
+
+  .resultados-pesquisa {
+    width: 90%; /* Largura da caixa de resultados em telas pequenas */
+    height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+  }
+
+  .item-resultado h2 {
+    font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+  }
+}
