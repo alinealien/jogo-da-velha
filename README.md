@@ -25,4 +25,4 @@ Como Começar
     4. Faça commit e push para o seu fork.
     5. Envie um pull request para revisão.
 
-
+Versão atualizada offline.
