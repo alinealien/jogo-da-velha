@@ -1,4 +1,4 @@
-## Jogo da Velha Colaborativo
+## Jogo da Velha Colaborativos
 
 Este é um projeto colaborativo de um jogo super clássico, e que espero que vocês já tenham jogado um dia. O objetivo é fornecer uma oportunidade para aqueles que desejam aprender sobre colaboração em projetos open source. O jogo está passando por ajustes no seu visual, então, em breve teremos uma interface bem mais agradável. No entanto, sugiro que aqueles que tenham interesse e conheçam HTML, CSS e JavaScript realizem uma cópia do projeto e personalizem ao seu modo.
 
