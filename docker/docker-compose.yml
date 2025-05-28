@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: jogodavelha_nginx
+    ports:      
+      - "8888:80"
+    restart: always
