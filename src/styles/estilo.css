@@ -1,14 +1,14 @@
 body {
     overflow: hidden;
     font-family: Consolas,monaco,monospace; 
-    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
+    background: yellow /* Adiciona um gradiente de cor */
 }
 
 .navbar{
     display: flex;
     justify-content: center;
     justify-items: center;
-    background-color: rgba(9, 53, 115, 0.5);
+    background-color: green;
 }
 
 .icon-logo-img, img{
