@@ -1,111 +1,114 @@
 body {
     overflow: hidden;
-    font-family: Consolas,monaco,monospace; 
-    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
+    font-family: Consolas, monaco, monospace;
+    background: linear-gradient(to right, #D1347B 30%, #093573 95%);
+    /* Adiciona um gradiente de cor */
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     justify-items: center;
     background-color: rgba(9, 53, 115, 0.5);
 }
 
-.icon-logo-img, img{
+.icon-logo-img,
+img {
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 1%;
     display: inline-block;
-   
+
 }
 
 .container1-quadrado {
     display: flex;
-    width: 100px; 
+    width: 100px;
     height: 100px;
-    margin-bottom: 45px;
-    margin-top: 5%;
+    margin-bottom: 50px;
+
 }
 
 .container2-quadrado {
     display: flex;
-    width: 100px; 
+    width: 100px;
     height: 100px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 }
 
 .container3-quadrado {
     display: flex;
-    width: 100px; 
+    width: 100px;
     height: 100px;
     margin-bottom: 3%;
 }
 
-.container{
-   display: inline-block;
-   padding: 10px;   
+.container {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 180px;
+    margin-left: 300px;
 }
 
 .quadrado {
+    display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: center;
     width: 100px;
     height: 100px;
     background-color: rgba(9, 53, 115, 0.5);
-    display: inline-block;
     padding: 70px;
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
     color: rgba(9, 53, 115, 0.0);
-    flex-wrap: wrap;
 }
 
-.container-pai{
+.container-pai {
     display: flex-end;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -7%;
+    margin-top: 200px;
 }
 
 .container-jogadores {
     order: 1;
     display: flex;
-    margin-top: -8%;
-    justify-content: flex-end; 
+    margin-top: -15%;
+    justify-content: flex-end;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
-.container-info-jogadores{
+.container-info-jogadores {
     order: 2;
     display: inline-block;
-    
+
     padding: 50px;
     border: 1px solid white;
     border-radius: 2%;
     list-style-type: none;
 
-    margin-left: 65%;
+    margin-left: 68%;
     margin-right: auto;
     width: 20%;
 
     margin-top: -8%;
-    
+
 }
 
 
-.jogador1, 
-.jogador2, 
-.vencedor{
+.jogador1,
+.jogador2,
+.vencedor {
     color: white;
     font-size: 20px;
     display: flex;
 }
 
 
-button{
+button {
     background-color: transparent;
     font-size: 20px;
     margin-top: 5%;
@@ -116,13 +119,13 @@ button{
     border: 1px solid white;
 }
 
-.button-class{
+.button-class {
     border-radius: 10%;
 }
 
 
 
-.jogador{
+.jogador {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,11 +142,11 @@ button{
     height: 150px;
 }
 
-p{
+p {
     margin-top: 30px;
 }
 
-.tituloTxt{
+.tituloTxt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,3 +154,68 @@ p{
     color: rgb(255, 255, 245);
 }
 
+@media (max-width: 1600px) {
+    .container {
+        margin-top: 180px;
+        margin-left: 200px;
+    }
+
+    .container-pai {
+        margin-top: 200px;
+    }
+
+    .container-jogadores {
+        margin-top: -23%;
+        margin-right: 150px;
+    }
+
+    .container-info-jogadores {
+        margin-left: 60%;
+        width: 20%;
+        margin-top: -8%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        margin-top: 180px;
+        margin-left: 150px;
+    }
+
+    .container-pai {
+        margin-top: 200px;
+    }
+
+    .container-jogadores {
+        margin-top: -25%;
+        margin-right: 80px;
+    }
+
+    .container-info-jogadores {
+        margin-left: 62%;
+        width: 20%;
+        margin-top: -8%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        margin-top: 180px;
+        margin-left: 150px;
+    }
+
+    .container-pai {
+        margin-top: 200px;
+    }
+
+    .container-jogadores {
+        margin-top: -30%;
+        margin-right: 20px;
+    }
+
+    .container-info-jogadores {
+        margin-left: 64%;
+        width: 20%;
+        margin-top: -8%;
+    }
+}
