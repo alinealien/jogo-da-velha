@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     font-family: Consolas,monaco,monospace; 
-    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
+    background: linear-gradient(to right, #4169E1 30%, #40E0D0 95%); /* Adiciona um gradiente de cor */
 }
 
 .navbar{
