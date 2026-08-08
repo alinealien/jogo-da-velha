@@ -8,7 +8,8 @@ body {
     display: flex;
     justify-content: center;
     justify-items: center;
-    background-color: rgba(9, 53, 115, 0.5);
+    /*background-color: rgba(9, 53, 115, 0.5);*/
+    backgound-color: #FFC0CB
 }
 
 .icon-logo-img, img{
