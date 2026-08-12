@@ -99,7 +99,7 @@ body {
 .jogador1, 
 .jogador2, 
 .vencedor{
-    color: white;
+    color: green;
     font-size: 20px;
     display: flex;
 }
