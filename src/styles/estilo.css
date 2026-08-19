@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     font-family: Consolas,monaco,monospace; 
-    background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
+    background: linear-gradient(to right, #412869 30%, #f5c750 95%); 
 }
 
 .navbar{
@@ -19,26 +19,15 @@ body {
    
 }
 
-.container1-quadrado {
-    display: flex;
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 45px;
-    margin-top: 5%;
-}
-
-.container2-quadrado {
-    display: flex;
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 45px;
-}
-
+/* linhas do tabuleiro: cada "container*-quadrado" terá 3 quadrados em linha */
+.container1-quadrado,
+.container2-quadrado,
 .container3-quadrado {
-    display: flex;
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 3%;
+  display: flex;
+  gap: 12px;                      
+  justify-content: center;
+  width: min(600px, 65vw);       
+  margin: 1.5rem auto;            
 }
 
 .container{
@@ -46,53 +35,53 @@ body {
    padding: 10px;   
 }
 
+/* casas do tabuleiro */
 .quadrado {
-    justify-content: center;
-    align-items: flex-start; 
-    width: 100px;
-    height: 100px;
+    flex: 1 1 0;                    
+    aspect-ratio: 1 / 1;            
+    max-width: calc((min(600px,65vw) - 24px) / 3);
     background-color: rgba(9, 53, 115, 0.5);
-    display: inline-block;
-    padding: 70px;
-    font-size: 60px;
-    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(20px, 5.5vw, 60px); 
+    margin: 0;
+    padding: 0;                      
     cursor: pointer;
     color: rgba(9, 53, 115, 0.0);
     flex-wrap: wrap;
 }
 
 .container-pai{
-    display: flex-end;
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: -7%;
+    gap: 3rem;
+    padding: 1.5rem;
+    margin-top: 0;
 }
 
 .container-jogadores {
     order: 1;
     display: flex;
-    margin-top: -8%;
-    justify-content: flex-end; 
+    flex-direction: column;
+    gap: 1.75rem;
     align-items: center;
-    margin-right: 10%;
+    margin: 0; 
 }
 
 .container-info-jogadores{
     order: 2;
-    display: inline-block;
-    
-    padding: 50px;
-    border: 1px solid white;
-    border-radius: 2%;
+    display: block;
+    padding: 1.25rem;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 6px;
     list-style-type: none;
 
-    margin-left: 65%;
-    margin-right: auto;
-    width: 20%;
-
-    margin-top: -8%;
-    
+    width: min(280px, 22vw);
+    box-sizing: border-box;
+    margin: 0;
 }
 
 
@@ -121,22 +110,21 @@ button{
 }
 
 
-
 .jogador{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-top: -20%;
-    padding: 10px;
-    margin-right: 80px;
-    margin-left: 80px;
-    margin-bottom: 15%;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 .jogador-icon {
-    width: 150px;
-    height: 150px;
+    width: clamp(80px, 18vmin, 180px); 
+    height: auto;                      
+    display: block;
+    object-fit: contain;               
+    max-width: 25%;                    
 }
 
 p{
@@ -150,4 +138,3 @@ p{
     text-align: center;
     color: rgb(255, 255, 245);
 }
-
