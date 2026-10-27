@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
     font-family: Consolas,monaco,monospace; 
     background: linear-gradient(to right, #D1347B 30%, #093573 95%); /* Adiciona um gradiente de cor */
 }
@@ -67,6 +73,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: -7%;
+    border: 1px solid transparent;
 }
 
 .container-jogadores {
